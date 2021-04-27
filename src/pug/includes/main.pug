@@ -1,0 +1,31 @@
+div.license#license
+    div.license__plan-container
+        div.license__plan.license__plan_selected(value="13" plan="1")
+            p Licenseplan#1
+            span $13 per license
+        div.license__plan(value="22" plan="2")
+            p Licenseplan#2
+            span $22 per license
+        div.license__plan(value="34" plan="3")
+            p Licenseplan#3
+            span $34 per license
+        i
+    div.license__amount
+        span Number of licenses:
+        select
+            option(value="1") 1
+            option(value="5") 5
+            option(value="10") 10
+            option(value="15") 15
+    div.license__total
+        p TOTAL: 
+            span $
+                span.license__total-price 13
+                sup US
+    a(href="/buy-plan-1-amount-1" target="__blank" class="license__btn") Buy now
+
+    p.license__selected-plan Selected plan: #
+        span 1
+
+
+    

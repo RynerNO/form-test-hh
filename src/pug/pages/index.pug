@@ -1,0 +1,13 @@
+extends ../layout/layout.pug
+block vars
+	- var title = 'Тестовое задание HH';
+block header
+	include ../includes/header.pug
+block content
+	include ../includes/main.pug
+	
+block footer
+	include ../includes/footer.pug     
+              
+block scripts
+	script(src="js/common.min.js" type="text/javascript" defer)

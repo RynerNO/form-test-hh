@@ -1,0 +1,99 @@
+@import "import/reset"
+@import 'import/fonts'
+.license
+    max-width: 370px
+    width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+    border: 10px solid #EBEBEB
+    padding-left: 13px
+    padding-right: 13px
+.license
+    &__plan-container
+        margin-top: 20px
+        width: 100%
+        i
+            border-top: 2px solid #dadada
+            display: block
+    &__plan
+        width: 100%
+        display: flex
+        justify-content: space-between
+        padding-top: 13px
+        padding-bottom: 13px
+        position: relative
+        padding-left: 10px
+        padding-right: 10px
+        &:hover
+            cursor: pointer
+            background-color: #EBF4F7
+        p
+            font-family: "Bebas"
+            font-size: 18px
+            color: #787878
+            display: flex
+            &::before
+                content: ''
+                width: 20px
+                height: 20px
+                border-radius: 9999px
+                border: 3px solid
+                border-color: #DADADA
+                margin-right: 10px
+        span
+            color: #9D9D9D
+        
+        &_selected
+            background-color: #EBF4F7
+            border: 1px solid #D8E7ED
+            border-radius: 2px
+            p
+                &::before
+                    border-color: #34648E
+                    padding: 3px
+                    background-color: #0294BF
+                    background-clip: content-box 
+
+.license
+    &__amount
+        margin-top: 20px
+        padding-bottom: 20px
+        border-bottom: 1px solid #dadada
+        text-align: center
+        width: 100%
+        select
+            border: 1px solid #A1BFEF
+            padding-right: 3px
+            &:focus-visible
+                border: 2px solid #A1BFEF
+                margin: -1px
+                outline: none
+                
+.license
+    &__total
+        margin-top: 20px
+        text-transform: uppercase
+        p
+            font-weight: bold
+            color: #787878
+            span
+                color: #3E8EAD
+                sup
+                    font-size: 10px
+
+.license
+    &__btn
+        margin-top: 10px
+        padding: 10px 40px
+        background-color: #33A845
+        border-radius: 20px
+        color: #fff
+        text-transform: uppercase
+        font-size: 12px
+
+.license
+    &__selected-plan
+        margin-top: 20px
+        margin-bottom: 20px
+        color: #81b9ce
